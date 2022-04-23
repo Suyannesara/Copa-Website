@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+  <title>Document</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      font-family: "poppins", sans-serif;
+      height: 100%;
+    }
+
+    header {
+      padding: 5%;
+      background-color: brown;
+    }
+
+    header img {
+      margin-top: 10px;
+      width: 50px;
+    }
+
+    img {
+      max-width: 30px;
+    }
+
+    section {
+      padding: 5%;
+    }
+
+    .table1{
+      width: 30%;
+      height: 2%;
+      padding-right: 3%;
+    }
+
+    .table2{
+      width: 60%;
+      height: 2%;
+    }
+
+    .grupo-tabelas{
+      display: flex;
+    }
+
+    th{
+      border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
+    td, tr {
+      padding: 4%;
+      border-bottom: 1px solid rgb(141, 141, 141);
+    }
+     /* duas colunas com 50% */
+  .column {
+    float: left;
+    width: 6%;
+    padding: 15px;
+    
+  }
+  
+  /* LIMPAR FLOAT */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  h3 {
+      text-align: left;
+  }
+ 
+  </style>
+  
+
+
+
+</head>
+<body>
+  <header>
+    <h2><img src="img/2022.png" alt="">   GRUPOS</h2>
+  </header>
+  
+  <section>
+    
+    <!-- Precisa ter uma div envolvendo de 2 em 2 tabelas, dessa maneira:  -->
+    <div class="grupo-tabelas">
+
+      <!-- TABELA 1 DO GRUPO A  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO A</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/Catar.svg" alt=""> Catar</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Equador.svg" alt=""> Equador</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Senegal.svg" alt=""> Senegal</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Flag_of_FIFA.svg" alt=""> Holanda</td>
+        </tr>
+      
+      </table>
+  
+     
+        <!-- TABELA 2 DO GRUPO b  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO B</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/Inglaterra.svg" alt=""> Inglaterra</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Irã.svg" alt=""> Irã</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Estados_Unidos.svg" alt=""> Estados Unidos</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Flag_of_FIFA.svg" alt=""> Escócia/Ucrãnia ou Gales</td>
+        </tr>
+      
+      </table>
+  
+     
+        <!-- TABELA 3 DO GRUPO c  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO C</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/Argentina.svg" alt=""> Argentina</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Arábia_Saudita.svg" alt=""> Arábia Saudita</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/México.svg" alt=""> México</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Polonia.svg" alt=""> Polõnia</td>
+        </tr>
+      
+      </table>
+      <!-- TABELA 4 DO GRUPO D  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO D</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/França.svg" alt=""> França</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Flag_of_FIFA.svg" alt=""> Emirados Árabes/Autrália/Peru</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Dinamarca.svg" alt=""> Dinamarca</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/tunisia.svg" alt=""> Tunísia</td>
+        </tr>
+      
+      </table>
+      <!-- TABELA 5 DO GRUPO E  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO E</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/Espanha.svg" alt=""> Espanha</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Flag_of_FIFA.svg" alt=""> Nova Zelândia/costa Rica</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Alemanha.svg" alt=""> Alemanha</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Japao.svg" alt=""> Japão</td>
+        </tr>
+      
+      </table>
+      <!-- TABELA 6 DO GRUPO F  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO F</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/Bélgica.svg" alt=""> Bélgica</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Canadá.svg" alt=""> Canadá</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Marrocos.svg" alt=""> Marrocos</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Croácia.svg" alt=""> Croácia</td>
+        </tr>
+      
+      </table>
+      <!-- TABELA 7 DO GRUPO G  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO G</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/Brasil.svg" alt=""> Brasil</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Servia.svg" alt=""> Sérvia</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Suíça.svg" alt=""> Suiça</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Camarões.svg" alt=""> Camarões</td>
+        </tr>
+      
+      </table>
+      <!-- TABELA 8 DO GRUPO H  -->
+      <table class="table1">
+        <thead>
+          <th>GRUPO H</th>
+        </thead>
+      
+        <tr>
+          <td><img src="img/Portugal.svg" alt=""> Portugal</td>
+          
+        </tr>
+      
+        <tr>
+          <td><img src="img/Gana.svg" alt=""> Gana</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Uruguai.svg" alt=""> Uruguai</td>
+        </tr>
+      
+        <tr>
+          <td><img src="img/Coreia_do_Sul.svg" alt=""> Coreia do Sul</td>
+        </tr>
+      
+      </table>
+      
+
+      </table>
+  
+      
+    </div>
+   <dir class="row, fade, "  style="text-align: center;">
+       <br>
+       <h3 >Jogos</h3>
+       <br>
+       <dir class="column" style="background-color:rgb(239, 238, 238);">
+        <h4 >21/11</h4>
+        <br>            
+        <h5>7h - AL Thumama </h5>  <br>
+        <p>   Senegal</p>
+        <P >X</P>   
+    <p>   Holanda</p>
+    <br> <hr> 
+    <br>            
+        <h5>10h - Khalifa </h5> <br> 
+        <p>   Inglaterra</p>
+        <P></P> X </P>   
+    <p>   Irã</p>
+    <br> <hr> 
+    <br>                
+        <h5>13h - AL Bayt </h5> <br>  
+        <p>   Catar</p>
+        <P >X</P>   
+    <p>   Equador</p>
+    <br> <hr> 
+    <br>                
+        <h5>16h - Al Rayyan </h5> <br>  
+        <p>   Estados_Unidos</p>
+        <P >X</P>   
+    <p>   País de Gale / Escócia / Ucrânia</p>
+       </dir>
+      
+        <dir class="column">
+            <h4 ">22/11</h4>
+                        <br>            
+                        <h5>7h - Lusail </h5>  <br>
+                        <p>   Argentina</p>
+                        <P >X</P>   
+                    <p>   Arábia Saudita</p>
+                    <br> <hr> 
+                    <br>            
+                        <h5>10h - Education City </h5> <br> 
+                        <p>   Dinamarca</p>
+                        <P>X</P>   
+                    <p>   Tunísia</p>
+                    <br> <hr> 
+                    <br>                
+                        <h5>13h - Porto de Doha </h5> <br>  
+                        <p>   México</p>
+                        <P>X</P>   
+                    <p>   Polônia</p>
+                    <br> <hr> 
+                    <br>                
+                        <h5>16h -Al Wakrah </h5> <br>  
+                        <p>   França</p>
+                        <P>X</P>   
+                    <p>   Peru / Austrália / Emirados Árabes</p>
+        </dir>
+       
+            <dir class="column" style=" background-color: rgb(239, 238, 238);">
+                <h4>23/11</h4>
+                <br>            
+                <h5>7h - Al Bayt </h5>  <br>
+                <p>Marrocos </p>
+                <P>X</P>   
+                <p>   Croácia</p>
+                <br> <hr> 
+                <br>            
+                <h5>10h - Khalifa </h5> <br> 
+                <p> Alemnha  </p>
+                <P >X</P>   
+                <p>   Japão</p>
+                <br> <hr> 
+                <br>                
+                <h5>13h - Al Thumama </h5> <br>  
+                <p>   Espanha</p>
+                <P>X</P>   
+                <p> Costa Rica  </p>
+                <br> <hr> 
+                <br>                
+                <h5>16h - Al Rayyan </h5> <br>  
+                <p>   Bélgica</p>
+                <P>X</P>   
+                <p>   Canadá</p>
+            </dir>
+            
+                <dir class="column">
+                    
+                    <h4 >24/11</h4>
+                    <br>            
+                    <h5>7h - Wakrah </h5>  <br>
+                    <p>Suiça</p>
+                    <P >X</P>   
+                    <p>   Camarões</p>
+                    <br> <hr> 
+                    <br>            
+                    <h5>10h - Education City </h5> <br> 
+                    <p>   Uruguai</p>
+                    <P >X</P>   
+                    <p>   Coreia do Sul</p>
+                    <br> <hr> 
+                    <br>                
+                    <h5>13h - Porto de Doha </h5> <br>  
+                    <p>   Portugual</p>
+                    <P >X</P>   
+                    <p>   Gana</p>
+                    <br> <hr> 
+                    <br>                
+                    <h5>16h - Lusail </h5> <br>  
+                    <p>  Brasil</p>
+                    <P >X</P>   
+                    <p> Sérvia</p>
+                            
+                </dir>
+               
+                    <dir class="column" style="background-color: rgb(239, 238, 238)">
+                        <h4 >25/11</h4>
+                        <br>            
+                        <h5>7h - AL Rayyan </h5>  <br>
+                        <p>   País de Gales / Escócia / Ucrânia</p>
+                        <PX</P>   
+                        <p>   Irã</p>
+                        <br> <hr> 
+                        <br>            
+                        <h5>10h - Al Thumama </h5> <br> 
+                        <p>   Catar</p>
+                        <P >X</P>   
+                        <p>  Senegal</p>
+                        <br> <hr> 
+                        <br>                
+                        <h5>13h - Khalifa </h5> <br>  
+                        <p>   Holanda</p>
+                        <P >X</P>   
+                        <p>   Equador</p>
+                        <br> <hr> 
+                        <br>                
+                        <h5>16h - Al-Bayt </h5> <br>  
+                        <p>  Inglaterra</p>
+                        <P >X</P>   
+                        <p>   Estados Unidos</p>
+                    </dir>
+                    
+                        <dir class="column">
+                            <h4 >26/11</h4>
+                            <br>            
+                            <h5>7h - Al Wakrah </h5>  <br>
+                            <p>   Tunísia</p>
+                            <P >X</P>   
+                            <p>  Peru</p>
+                            <br> <hr> 
+                            <br>            
+                            <h5>10h - Education City </h5> <br> 
+                            <p>   Polônia</p>
+                            <P >X</P>   
+                            <p>   Arábia Saudita</p>
+                            <br> <hr> 
+                            <br>                
+                            <h5>13h - Porto de Doha </h5> <br>  
+                            <p>   França</p>
+                            <P >X</P>   
+                            <p>   Dinamarca</p>
+                            <br> <hr> 
+                            <br>                
+                            <h5>16h - Lusail </h5> <br>  
+                            <p>   Argentina</p>
+                            <P>X</P>   
+                        <p>   México </p>
+                        </dir>
+                     
+                            <dir class="column" style="background-color: rgb(239, 238, 238);">
+                                <h4 >27/11</h4>
+                                <br>            
+                                <h5>7h - AL Rayyan </h5>  <br>
+                                <p>   Japão</p>
+                                <P >X</P>   
+                                <p>   Costa Rica / Nova Zelândia</p>
+                                <br> <hr> 
+                                <br>            
+                                <h5>10h - Al Thumama </h5> <br> 
+                                <p>   Bélgica</p>
+                                <P >X</P>   
+                                <p>   Marrocos</p>
+                                <br> <hr> 
+                                <br>                
+                                <h5>13h - Khalifa </h5> <br>  
+                                <p>   Croácia</p>
+                                <P >X</P>   
+                                <p>  Canadá</p>
+                                <br> <hr> 
+                                <br>                
+                                <h5>16h - Al-Bayt </h5> <br>  
+                                <p>   Espanha</p>
+                                <P >X</P>   
+                                <p>   Alemanha</p>
+                            </dir>
+                           
+                                <dir class="column">
+                                    <h4 >28/11</h4>
+                                    <br>            
+                                    <h5>7h - AL Wakrah </h5>  <br>
+                                    <p>   Camarões</p>
+                                    <P >X</P>   
+                                    <p>   Sérvia</p>
+                                    <br> <hr> 
+                                     <br>            
+                                    <h5>10h - Education City </h5> <br> 
+                                    <p>  Coreia do Sul</p>
+                                    <P >X</P>   
+                                    <p>   Gana</p>
+                                    <br> <hr> 
+                                    <br>                
+                                    <h5>13h - Porto de Doha </h5> <br>  
+                                    <p>   Brasil</p>
+                                    <P >X</P>   
+                                    <p>   Suiça</p>
+                                    <br> <hr> 
+                                    <br>                
+                                    <h5>16h - Lusail </h5> <br>  
+                                    <p>   Portugal</p>
+                                    <P >X</P>   
+                                    <p>  Uruguai</p>  
+                                </dir>
+                                
+                                    <dir class="column" style="background-color: rgb(239, 238, 238);" >
+                <h4>29/11</h4>
+                <br>            
+                <h5>12h - Al Bayt </h5>  <br>
+                <p>   Holanda</p>
+                <P >X</P>   
+                <p>   Catar</p>
+                <br> <hr> 
+                <br>            
+                <h5>12h - Khalifa </h5> <br> 
+                <p>   Equador</p>
+                <P >X</P>   
+                <p>   Senegal</p>
+                <br> <hr> 
+                <br>                
+                <h5>16h - AL Rayyan </h5> <br>  
+                <p>   País de Gales / Escócia / Ucrânia</p>
+                <P >X</P>   
+                <p>   Inglaterra</p>
+                <br> <hr> 
+                <br>                
+                <h5>16h - Al Thumama </h5> <br>  
+                <p>  Irã</p>
+                <P >X</P>   
+                <p>   Estados Unidos</p>
+                                    </dir>
+                                    
+                                        <dir class="column" >
+                                        <h4 >30/11</h4>
+                                        <br>            
+                                        <h5>12h - Education City </h5>  <br>
+                                        <p>   Tunísia</p>
+                                        <P >X</P>   
+                                        <p>  França</p>
+                                        <br> <hr> 
+                                        <br>            
+                                        <h5>12h - Al Wakrah </h5> <br> 
+                                        <p>   Peru / Austrália / Emirados Árabes</p>
+                                        <P >X</P>   
+                                        <p>   Dinamarca</p>
+                                        <br> <hr> 
+                                        <br>                
+                                        <h5>16h - Porto de Doha </h5> <br>  
+                                        <p>   Polônia</p>
+                                        <P >X</P>   
+                                        <p>   Argentina</p>
+                                        <br> <hr> 
+                                        <br>                
+                                        <h5>16h - Lusail </h5> <br>  
+                                        <p>   Arábia Saudita</p>
+                                        <P >X</P>   
+                                        <p>   México</p>
+                                        </dir>
+                                        
+                                            <dir class="column" style="background-color: rgb(239, 238, 238);" >
+                <h4 >01/12</h4>
+                <br>            
+                <h5>12h - AL Rayyan </h5>  <br>
+                <p>   Croácia</p>
+                <P >X</P>   
+                <p>   Bélgica</p>
+                <br> <hr> 
+                <br>            
+                <h5>12h - Al Thumama </h5> <br> 
+                <p>   Canadá</p>
+                <P >X</P>   
+                <p>   Marrocos</p>
+                <br> <hr> 
+                <br>                
+                <h5>16h - Khalifa </h5> <br>  
+                <p>   Japão</p>
+                <P >X</P>   
+                <p>   Espanha</p>
+                <br> <hr> 
+                <br>                
+                <h5>16h - Al Bayt </h5> <br>  
+                <p>   Costa Rica / Nova Zelândia</p>
+                <P >X</P>   
+                <p>   Alemanha</p>
+                                            </dir>
+                                           
+                                                <dir class="column" >
+                <h4 >02/12</h4>
+                <br>            
+                <h5>12h - Education City </h5>  <br>
+                <p>   Coreia do Sul</p>
+                <P >X</P>   
+                <p>   Portugal</p>
+                <br> <hr> 
+                <br>            
+                <h5>12h - Al Wakrah </h5> <br> 
+                <p>   Gana</p>
+                <P >X</P>   
+            <p>   Uruguai</p>
+            <br> <hr> 
+            <br>                
+                <h5>16h - Lusail </h5> <br>  
+                <p>   Camarões</p>
+                <P >X</P>   
+            <p>   Brasil</p>
+            <br> <hr> 
+            <br>                
+                <h5>16h - Porto de Doha </h5> <br>  
+                <p>   Sérvia</p>
+                <P>X</P>   
+            <p>   Suiça</p>
+                                                </dir>
+       
+
+
+   </dir>
+  </section>
+
+
+</body>
+</html>
