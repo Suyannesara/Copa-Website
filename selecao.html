@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,88 +10,2072 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 
-  <title>Document</title>
+  <title>Seleções</title>
 
   <style>
-    html, body {
-      font-family: "poppins", sans-serif;
-      height: 100%;
+
+   * {
       margin: 0;
     }
 
+    html, body {
+      font-family: "poppins", sans-serif;
+    }
+
     header {
-      padding: 4%;
       width: 100%;
-      background-color: brown;
+      height: 100vh;
+      background-color: #8A0000;
+
+      background-image: url("flags/catar.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
-    header img {
-      margin-top: 10px;
-      width: 50px;
-    }
+    .titulo-header {
+        display: flex;
+        height: 80%;
+        justify-content: center;
+        }
 
-    img {
-      width: 30px;
+    .titulo-header h2 {
+        align-self: center;
+        color: #FFFF;
+        }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 3% 10% 3% 10%;
+      background-color: #8A0000;
     }
 
     section {
       padding: 5%;
     }
 
+    table ul{
+      display: block;
+    }
+
+    table{
+      border-collapse: collapse;
+    }
+
+    ul a {
+      padding: 5%;
+      text-decoration: none;
+      color: #FFFF;
+      border-radius: 2px;
+    }
+
+    ul a:hover{
+      background-color: #FFFF;
+      color: #8A0000;
+      transition: 800ms;
+    }
+
+    ul{
+      list-style: none;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h2{
+      font-size: 2cm;
+      color: #000000;
+    }
+
+    img {
+      width: 35px;
+    }
+
+    footer{
+      width: 100%;
+      height: 100px;
+      background-color: #8A0000;
+      clear:both;
+    }
+
+    #coluna1{
+        height: 100%;
+        width: 60%;
+        float: left;
+    }
+
+    #coluna2{
+        width: 40%;
+        height: 650px;
+        float: left;
+    }
+
+    #coluna2 img{
+      width: 400px;
+      display: block;
+      margin: auto;
+      margin-top: 200px;
+      margin-left: 0;
+    }
 
   </style>
-
-
 
 </head>
 <body>
 
   <!-- CABECALHO -->
   <header>
-    <h2><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e3/2022_FIFA_World_Cup.svg/1200px-2022_FIFA_World_Cup.svg.png" alt="">SELEÇÕES</h2>
+    <nav>
+      <ul>
+          <li><a class="active" href="">HOME</a></li>
+          <li><a href="">SELEÇÕES</a></li>
+          <li><a href="">ESTÁDIOS</a></li>
+          <li><a href="">GRUPOS</a></li>
+      </ul>    
+  </nav>
+  
   </header>
 
-  <!-- SECAO COM O NOME DOS PAÍSES -->
-  <section>
-    <i>Clique no nome para abrir as informações sobre o país:</i>
+  <!-- SEÇÃO COM O NOME DOS PAÍSES -->
+  
+<div id="coluna1">
 
-    <!-- UMA TABELA PARA ORGANIZAR OS PAÍSES -->
-    <table>
-      <tr>
-        <td>
-          <!-- DETAILS É O ELEMENTOS QUE ESCONDE AS INFORMAÇÕES  -->
-          <details>
-            <!-- SUMMARY - INFORMAÇÃO QUE NÃO FICA ESCONDIDA -->
-            <summary><img src="https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg" alt="">    ALEMANHA</summary>
-
-            <!-- INFORMAÇÃO QUE FICA ESCONDIDA:  -->
-            <p>Brasil tananaana</p>
+    <section>
+        <i><b>Clique no nome para abrir as informações de cada seleção:</b></i>
+    
+        <!-- UMA TABELA PARA ORGANIZAR OS PAÍSES -->
+        <br>
+        <br>
+        <table>
+          <tr>
+            <td>
+              <!-- DETAILS É O ELEMENTOS QUE ESCONDE AS INFORMAÇÕES  -->
+              <details>
+                <!-- SUMMARY - INFORMAÇÃO QUE NÃO FICA ESCONDIDA -->
+                <summary><img src="Flags/Alemanha.svg" alt="">ALEMANHA</summary>
+    
+                <!-- INFORMAÇÃO QUE FICA ESCONDIDA:  -->
+                <p>
+                  <br>
+                  <ul>
+                    <li>➱ﾠParticipou de 19 edições da copa do mundo, sendo esta a sua 20º participação.</li>
+                    <li>➱ﾠSeleção tetra campeã mundial em 1954, 1974, 1990 e 2014.</li>
+                    <li>➱ﾠNome do Técnico: Hans-Dieter Flick</li>
+    
+                    <!-- DETAILS É O ELEMENTOS QUE ESCONDE AS INFORMAÇÕES  -->            
+                    <details>
+                <!-- SUMMARY - INFORMAÇÃO QUE NÃO FICA ESCONDIDA -->                  
+                  <summary>Jogadores:</summary>
+                  <table border="1">
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                    </tr>
+                    <tr>
+                      <th>Manuel Neuer</th>
+                      <th>Mac-André ter Stegen</th>
+                      <th>Kevin Trapp</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                    </tr>
+                    <tr>
+                      <th>Antonio Rüdiger</th>
+                      <th>Matthias Ginter</th>
+                      <th>Christian Günter</th>
+                    </tr>
+                    <tr>
+                      <th>Jonathan Tah</th>
+                      <th>Robin Koch</th>
+                      <th>Thilo Kehrer</th>
+                    </tr>
+                    <tr>
+                      <th>Benjamin Henrichs</th>
+                      <th>David Raum</th>
+                      <th>Nico Schlotterbeck</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                    </tr>
+                    <tr>
+                      <th>Ilkay Gündogan</th>
+                      <th>Julian Draxler</th>
+                      <th>Joshua Kimmich</th>
+                    </tr>
+                    <tr>
+                      <th>Julian Brandt</th>
+                      <th>Julian Weigl</th>
+                      <th>Kai Havertz</th>
+                    </tr>
+                    <tr>
+                      <th>Florian Neuhaus</th>
+                      <th>Jamal Musiala</th>
+                      <th>Anton Stach</th>
+                    </tr>
+                    <tr>
+                      <th style="background-color: #A9A9A9;"></th>
+                      <th>Jonas Hofmann</th>
+                      <th style="background-color: #A9A9A9;"></th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                    </tr>
+                    <tr>
+                      <th>Thomas Müller</th>
+                      <th>Timo Werner</th>
+                      <th>Leroy Sané</th>
+                    </tr>
+                    <tr>
+                      <th style="background-color: #A9A9A9;"></th>
+                      <th>Lukas Nmecha</th>
+                      <th style="background-color: #A9A9A9;"></th>
+                    </tr>
+                  </table>
+                </details>
+                
+                    <!-- DETAILS É O ELEMENTOS QUE ESCONDE AS INFORMAÇÕES  -->            
+                    <details>
+                    <summary>Tabela com os jogos que irá ocorrer:</summary>
+                    <table>
+                      <tr>
+                        <tr>
+                          <th>10:00</th>
+                        </tr>                   
+                        <th style="font-size: 20px;">
+                          ALEﾠ<img src="Flags/Alemanha.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Japao.svg" alt="">ﾠJAP</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUA 23/11/2022 - INTERNACIONAL KHALIFA</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          ESPﾠ<img src="Flags/Espanha.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Alemanha.svg" alt="">ﾠALE</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight:normal; padding: 1%; border-bottom: 1px solid gray;">DOM 27/11/2022 - AL KHOR</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          ﾠ<img src="Flags/FIFA.jpg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Alemanha.svg" alt="">ﾠALE</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal;">QUI 01/12/2022 - AL KHOR</th>
+                      </tr>
+                    </table>
+                </details>
+                  </ul>
+                </p>
+                <br>
+              </details>
+            </td>
+          </tr>
+    <!-- FIM DAS INFORMAÇÕES DA ALEMANHA -->   
+    
+    <tr>
+      <td>
+        <details>
+          <summary><img src="Flags/Arábia_Saudita.svg" alt="">ARÁBIA SAUDITA</summary>
+    
+          <p>
+            <br>
+            <ul>
+              <li>➱ﾠParticipou de 5 edições da copa do mundo, sendo esta a sua 6º participação.</li>
+              <li>➱ﾠNenhum título mundial.</li>
+              <li>➱ﾠNome do Técnico: Hervé Renard</li>
+    
+              <details>
+            <summary>Jogadores:</summary>
+            <table border="1">
+              <tr>
+                <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+              </tr>
+              <tr>
+                <th>Mohammed Al-Owais</th>
+                <th>Ameen Al-Bukhari</th>
+                <th>Fawaz Al-Qarni</th>
+              </tr>
+              <tr>
+                <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+              </tr>
+              <tr>
+                <th>Yaseer Al-Shahrani</th>
+                <th>Ahmed Sharahili</th>
+                <th>Abdullah Madu</th>
+              </tr>
+              <tr>
+                <th>Mohammed Al-Burayk</th>
+                <th>Hassan Al Tambakti</th>
+                <th>Abdulelah Al-Amri</th>
+              </tr>
+              <tr>
+                <th>Saud Abdulhamid</th>
+                <th>Ziyad Al Sahafi</th>
+                <th>Moteb Alharbi</th>
+              </tr>
+              <tr>
+                <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+              </tr>
+              <tr>
+                <th>Salman Al-Faraj</th>
+                <th>Sami Al-Naji</th>
+                <th>Mohamed Kanno</th>
+              </tr>
+              <tr>
+                <th>Abdulaziz Al-Bishi</th>
+                <th>Hattan Bahebri</th>
+                <th>Abdulrahman Alobud</th>
+              </tr>
+              <tr>
+                <th>Khalid Al-Ghannam</th>
+                <th style="background-color: #A9A9A9;"></th>
+                <th>Ali Al-Hassan</th>
+              </tr>
+              <tr>
+                <th colspan="3" style="background-color:#a52a2a; color:#FFFF;">ATACANTES</th>
+              </tr>
+              <tr>
+                <th>Salem Al-Dawsari</th>
+                <th>Saleh Khalid Al-Shehri</th>
+                <th>Fahad Al Muwallad</th>
+              </tr>
+              <tr>
+                <th>Abdulrahman Ghareeb</th>
+                <th>Feras Al Brikan</th>
+                <th>Abdullah Al-Hamddan</th>
+              </tr>
+            </table>
           </details>
-        </td>
-      </tr>
+          
+              <details>
+              <summary>Tabela com os jogos que irá ocorrer:</summary>
+              <table>
+                <tr>
+                  <tr>
+                    <th>07:00</th>
+                  </tr>
+                  <th style="font-size: 20px;">
+                    ARGﾠ<img src="Flags/Argentina.svg" alt="">ﾠﾠXﾠﾠ
+                    <img src="Flags/Arábia_Saudita.svg" alt="">ﾠARA</th>
+                </tr> 
+                <tr>   
+                    <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">TER 22/11/2022 - NACIONAL DE LUSAIL</th>
+                </tr>
+                <tr>
+                  <tr>
+                    <th>10:00</th>
+                  </tr>
+                  <th style="font-size: 20px;">
+                    POLﾠ<img src="Flags/Polonia.svg" alt="">ﾠﾠXﾠﾠ
+                    <img src="Flags/Arábia_Saudita.svg" alt="">ﾠARA</th>
+                </tr> 
+                <tr>   
+                    <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SÁB 26/11/2022 - CIDADE DA EDUCAÇÃO</th>
+                </tr>
+                <tr>
+                  <tr>
+                    <th>16:00</th>
+                  </tr>
+                  <th style="font-size: 20px;">
+                    ARAﾠ<img src="Flags/Arábia_Saudita.svg" alt="">ﾠﾠXﾠﾠ
+                    <img src="Flags/México.svg" alt="">ﾠMEX</th>
+                </tr> 
+                <tr>   
+                    <th style="font-weight: normal;">QUA 30/11/2022 - NACIONAL DE LUSAIL</th>
+                </tr>
+              </table>
+          </details>
+            </ul>
+            <br>
+          </p>
+        </details>
+      </td>
+    </tr>
+      <!-- FIM DAS INFORMAÇÕES DA ARÁBIA SAUDITA -->
+    
+          <tr>
+            <td>
+              <details>
+                <summary><img src="Flags/Argentina.svg" alt="">ARGENTINA</summary>
+                <p>
+                  <br>
+                  <ul>
+                    <li>➱ﾠParticipou de 17 edições da copa do mundo, sendo esta a sua 18º participação.</li>
+                    <li>➱ﾠSeleção bicampeã mundial em 1978 e 1986.</li>
+                    <li>➱ﾠNome do Técnico: Lionel Scaloni</li>
+          
+                    <details>
+                  <summary>Jogadores:</summary>
+                  <table border="1">
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                    </tr>
+                    <tr>
+                      <th>Franco Armani</th>
+                      <th>Gerónimo Rulli</th>
+                      <th>Juan Musso</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                    </tr>
+                    <tr>
+                      <th>Nicolás Otamendi</th>
+                      <th>Germán Pezzella</th>
+                      <th>Nicolás Tagliafico</th>
+                    </tr>
+                    <tr>
+                      <th>Nahuel Molina</th>
+                      <th>Hassan Al Tambakti</th>
+                      <th>Abdulelah Al-Amri</th>
+                    </tr>
+                    <tr>
+                      <th style="background-color:darkgray"></th>
+                      <th>Juan Foyth</th>
+                      <th style="background-color:darkgray"></th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                    </tr>
+                    <tr>
+                      <th>Ángel Di María</th>
+                      <th>Manuel Lanzini</th>
+                      <th>Leandro Paredes</th>
+                    </tr>
+                    <tr>
+                      <th>Exequiel Palacios</th>
+                      <th>Alexis Mac Allister</th>
+                      <th>Luka Romero</th>
+                    </tr>
+                    <tr>
+                      <th>Matìas Soulè Malvano</th>
+                      <th>Alejandro Garnacho</th>
+                      <th>Valentin Carboni</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                    </tr>
+                    <tr>
+                      <th>Joaquín Correa</th>
+                      <th>Lionel Messi</th>
+                      <th>Nicolás González</th>
+                    </tr>
+                    <tr>
+                      <th>Ángel Correa</th>
+                      <th>Lucas Boyé</th>
+                      <th>Julián Álvarez</th>
+                    </tr>
+                  </table>
+                </details>
+                
+                    <details>
+                    <summary>Tabela com os jogos que irá ocorrer:</summary>
+                    <table>
+                      <tr>
+                        <tr>
+                          <th>07:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          ARGﾠ<img src="Flags/Argentina.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Arábia_Saudita.svg" alt="">ﾠARA</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">TER 22/11/2022 - NACIONAL DE LUSAIL</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          ARGﾠ<img src="Flags/Argentina.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/México.svg" alt="">ﾠMEX</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SÁB 26/11/2022 - NACIONAL DE LUSAIL</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          POLﾠ<img src="Flags/Polonia.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Argentina.svg" alt="">ﾠARG</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal;">QUA 30/11/2022 - PORTO DE DOHA</th>
+                      </tr>
+                    </table>
+                </details>
+                  </ul>
+                  <br>
+                </p>
+              </details>
+            </td>
+          </tr>
+      <!-- FIM DAS INFORMAÇÕES DA ARGENTINA --> 
+    
+          <tr>
+            <td>
+              <details>
+                <summary><img src="Flags/Bélgica.svg" alt="">BÉLGICA</summary>
+                <p>
+                  <br>
+                  <ul>
+                    <li>➱ﾠParticipou de 13 edições da copa do mundo, sendo esta a sua 14º participação.</li>
+                    <li>➱ﾠNenhum título mundial.</li>
+                    <li>➱ﾠNome do Técnico: Roberto Martínez</li>
+          
+                    <details>
+                  <summary>Jogadores:</summary>
+                  <table border="1">
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                    </tr>
+                    <tr>
+                      <th>Simon Mignolet</th>
+                      <th>Thomas Kaminski</th>
+                      <th>Davy Roef</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                    </tr>
+                    <tr>
+                      <th>Dedryck Boyata</th>
+                      <th>Thomas Foket</th>
+                      <th>Jason Denayer</th>
+                    </tr>
+                    <tr>
+                      <th>Wout Faes</th>
+                      <th>Siebe van der Heyden</th>
+                      <th>Sebastiaan Bornauw</th>
+                    </tr>
+                    <tr>
+                      <th style="background-color:darkgray"></th>
+                      <th>Arthur Theate</th>
+                      <th style="background-color:darkgray"></th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                    </tr>
+                    <tr>
+                      <th>Leander Dendoncker</th>
+                      <th>Thorgan Hazard</th>
+                      <th>Adnan Januzaj</th>
+                    </tr>
+                    <tr>
+                      <th>Youri Tielemans</th>
+                      <th>Hans Vanaken</th>
+                      <th>Orel Mangala</th>
+                    </tr>
+                    <tr>
+                      <th>Albert Sambi Lokonga</th>
+                      <th>Alexis Saelemaekers</th>
+                      <th>Yari Verschaeren</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                    </tr>
+                    <tr>
+                      <th>Christian Benteke</th>
+                      <th>Michy Batshuayi</th>
+                      <th>Leandro Trossard</th>
+                    </tr>
+                    <tr>
+                      <th>Divock Origi</th>
+                      <th>Dante Vanzeir</th>
+                      <th>Romelu Lukaku</th>
+                    </tr>
+                  </table>
+                </details>
+                
+                    <details>
+                    <summary>Tabela com os jogos que irá ocorrer:</summary>
+                    <table>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          BELﾠ<img src="Flags/Bélgica.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Canadá.svg" alt="">ﾠCAN</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">TER 23/11/2022 - AL RAYYAN</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>10:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          BELﾠ<img src="Flags/Bélgica.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Marrocos.svg" alt="">ﾠMAR</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">DOM 27/11/2022 - AL THUMAMA</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>12:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          CROﾠ<img src="Flags/Croácia.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Bélgica.svg" alt="">ﾠBEL</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal;">QUI 01/12/2022 - AL RAYYAN</th>
+                      </tr>
+                    </table>
+                </details>
+                  </ul>
+                  <br>
+                </p>
+              </details>
+            </td>
+          </tr>
+      <!-- FIM DAS INFORMAÇÕES DA BÉLGICA --> 
+    
+          <tr>
+            <td>
+              <details>
+                <summary><img src="Flags/Brasil.svg" alt="">BRASIL</summary>
+                <p>
+                  <br>
+                  <ul>
+                    <li>➱ﾠParticipou de todas as edições da copa do mundo.</li>
+                    <li>➱ﾠSeleção pentacampeã mundial, em 1958, 1962, 1970, 1994 e 2002, sendo a única seleção a ter 5 títulos.</li>
+                    <li>➱ﾠNome do Técnico: Adenor Leonardo Bachi (TITE)</li>
+          
+                    <details>
+                  <summary>Jogadores:</summary>
+                  <table border="1">
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                    </tr>
+                    <tr>
+                      <th>Alisson</th>
+                      <th>Ederson</th>
+                      <th>Weverton</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                    </tr>
+                    <tr>
+                      <th>Marquinhos</th>
+                      <th>Thiago Silva</th>
+                      <th>Éder Militão</th>
+                    </tr>
+                    <tr>
+                      <th>Dani Alves</th>
+                      <th>Guilherme Arana</th>
+                      <th>Danilo</th>
+                    </tr>
+                    <tr>
+                      <th>Alex Telles</th>
+                      <th style="background-color: #A9A9A9;"></th>
+                      <th>Alex Sandro</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                    </tr>
+                    <tr>
+                      <th>Philippe Coutinho</th>
+                      <th>Fred</th>
+                      <th>Casemiro</th>
+                    </tr>
+                    <tr>
+                      <th>Lucas Paquetá</th>
+                      <th>Bruno Guimarães</th>
+                      <th>Arthur</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                    </tr>
+                    <tr>
+                      <th>Neymar Jr.</th>
+                      <th>Richarlison</th>
+                      <th>Antony</th>
+                    </tr>
+                    <tr>
+                      <th>Vinícius Júnior</th>
+                      <th>Rodrygo</th>
+                      <th>Gabriel Martinelli</th>
+                    </tr>
+                  </table>
+                </details>
+                
+                    <details>
+                    <summary>Tabela com os jogos que irá ocorrer:</summary>
+                    <table>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          BRAﾠ<img src="Flags/Brasil.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Servia.svg" alt="">ﾠSER</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUI 24/11/2022 - NACIONAL DE LUSAIL</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>13:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          BRAﾠ<img src="Flags/Brasil.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Suíça.svg" alt="">ﾠSUI</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEG 28/11/2022 - PORTO DE DOHA</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          CAMﾠ<img src="Flags/Camarões.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Brasil.svg" alt="">ﾠBRA</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal;">SEX 02/12/2022 - NACIONAL DE LUSAIL</th>
+                      </tr>
+                    </table>
+                </details>
+                  </ul>
+                  <br>
+                </p>
+              </details>
+            </td>
+          </tr>
+      <!-- FIM DAS INFORMAÇÕES DO BRASIL --> 
+    
+          <tr>
+            <td>
+              <details>
+                <summary><img src="Flags/Camarões.svg" alt="">CAMARÕES</summary>
+          
+                <p>
+                  <br>
+                  <ul>
+                    <li>➱ﾠParticipou de 7 edições da copa do mundo, sendo esta a sua 8º participação.</li>
+                    <li>➱ﾠNenhum título mundial.</li>
+                    <li>➱ﾠNome do Técnico: Rigobert Song</li>
+          
+                    <details>
+                  <summary>Jogadores:</summary>
+                  <table border="1">
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                    </tr>
+                    <tr>
+                      <th>Fabrice Ondoa</th>
+                      <th>Devis Epassy Mboka</th>
+                      <th>Andre Onana</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                    </tr>
+                    <tr>
+                      <th>Ambroise Oyongo</th>
+                      <th>Jean-Charles Castelletto</th>
+                      <th>Jerome Onguene</th>
+                    </tr>
+                    <tr>
+                      <th>Harold Moukoudi</th>
+                      <th>Collins Faï</th>
+                      <th>Michael Ngadeu</th>
+                    </tr>
+                    <tr>
+                      <th>Enzo Ebosse</th>
+                      <th>Olivier Mbaizo</th>
+                      <th>Nouhou Tolo</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                    </tr>
+                    <tr>
+                      <th>Arnaud Djoum</th>
+                      <th>André-Frank Zambo Anguissa</th>
+                      <th>Jeando Fuchs</th>
+                    </tr>
+                    <tr>
+                      <th>Samuel Oum Gouet</th>
+                      <th>Nicolas Ngamaleu</th>
+                      <th>Martin Hongla</th>
+                    </tr>
+                    <tr>
+                      <th>James Léa Siliki</th>
+                      <th>Yvan Neyou</th>
+                      <th>Pierre Kunde Malong</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                    </tr>
+                    <tr>
+                      <th>Eric Maxim Choupo-Moting</th>
+                      <th>Vincent Aboubakar</th>
+                      <th>Stéphane Bahoken</th>
+                    </tr>
+                    <tr>
+                      <th>Clinton N'Jie</th>
+                      <th>Karl Toko Ekambi</th>
+                      <th>Kévin Soni</th>
+                    </tr>
+                  </table>
+                </details>
+                
+                    <details>
+                    <summary>Tabela com os jogos que irá ocorrer:</summary>
+                    <table>
+                      <tr>
+                        <tr>
+                          <th>07:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          SUIﾠ<img src="Flags/Suíça.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Camarões.svg" alt="">ﾠCAM</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUI 24/11/2022 - AL WAKRAH</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>07:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          CAMﾠ<img src="Flags/Camarões.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Servia.svg" alt="">ﾠSER</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEG 28/11/2022 - AL WAKRAH</th>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <th>16:00</th>
+                        </tr>
+                        <th style="font-size: 20px;">
+                          CAMﾠ<img src="Flags/Camarões.svg" alt="">ﾠﾠXﾠﾠ
+                          <img src="Flags/Brasil.svg" alt="">ﾠBRA</th>
+                      </tr> 
+                      <tr>   
+                          <th style="font-weight: normal;">SEX 02/12/2022 - NACIONAL DE LUSAIL</th>
+                      </tr>
+                    </table>
+                </details>
+                  </ul>
+                  <br>
+                </p>
+              </details>
+            </td>
+          </tr>
+      <!-- FIM DAS INFORMAÇÕES DO CAMARÕES -->
+    
       <tr>
         <td>
           <details>
-            <summary><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACZCAMAAADXexy/AAAACVBMVEUAAADdAAD/zgDGIigcAAAAjklEQVR4nO3PAQ0AIAAEodf+oa3hdtCADQAAAAAAAAAAAAAAAD522vzb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zbdtv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82/zb/Nv82x4uIZho613S3wAAAABJRU5ErkJggg==" alt="">    BRASIL</summary>
+            <summary><img src="Flags/Canadá.svg" alt="">CANADÁ</summary>
+      
             <p>
+              <br>
               <ul>
-                <li>i.	Quantas copas já participou</li>
-                <li>ii.	Quais premiações alcançou nas Copas do Mundo</li>
-                <li>iii.	Nome do Técnico</li>
-                <li>iv.	Principais Jogadores</li>
-                <li>v.	Tabela com os jogos que irá participar</li>
-
+                <li>➱ﾠParticipou de 1 edição da copa do mundo, sendo esta a sua 2º participação.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: John Herdman</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Milan Borjan</th>
+                  <th>Maxime Crépeau</th>
+                  <th>Dayne St. Clair</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Doneil Henry</th>
+                  <th>Steven Vitória</th>
+                  <th>Sam Adekugbe</th>
+                </tr>
+                <tr>
+                  <th>Richie Laryea</th>
+                  <th>Cristián Gutiérrez</th>
+                  <th>Derek Cornelius</th>
+                </tr>
+                <tr>
+                  <th>Kamal Miller</th>
+                  <th>Alistair Johnston</th>
+                  <th>Scott Kennedy</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Atiba Hutchinson</th>
+                  <th>Jonathan Osorio</th>
+                  <th>Mark-Anthony Kaye</th>
+                </tr>
+                <tr>
+                  <th>Liam Fraser</th>
+                  <th>Stephen Eustáquio</th>
+                  <th>Ismael Koné</th>
+                </tr> 
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Tajon Buchanan</th>
+                  <th>Junior Hoilett</th>
+                  <th>Lucas Cavallini</th>
+                </tr>
+                <tr>
+                  <th>Cyle Larin</th>
+                  <th>Ike Ugbo</th>
+                  <th>Liam Millar</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>16:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      BELﾠ<img src="Flags/Bélgica.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Canadá.svg" alt="">ﾠCAN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUA 23/11/2022 - AL RAYYAN</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CROﾠ<img src="Flags/Croácia.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Canadá.svg" alt="">ﾠCAN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">DOM 27/11/2022 - INTERNACIONAL KHALIFA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CANﾠ<img src="Flags/Canadá.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Marrocos.svg" alt="">ﾠMAR</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">QUI 01/12/2022 - AL THUMAMA</th>
+                  </tr>
+                </table>
+            </details>
               </ul>
+              <br>
             </p>
-
           </details>
         </td>
       </tr>
+      <!-- FIM DAS INFORMAÇÕES DO CANADÁ-->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Catar.svg" alt="">CATAR</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠSua 1º participação na copa do mundo.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: Félix Sánchez Bas</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Saad Al Sheeb</th>
+                  <th>Yousof Hassan</th>
+                  <th>Meshaal Barsham</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Ró-Ró</th>
+                  <th>Abdelkarim Hassan</th>
+                  <th>Salem Al Hajri</th>
+                </tr>
+                <tr>
+                  <th>Bassam Al Rawi</th>
+                  <th>Tarek Salman</th>
+                  <th>Musaab Khidir</th>
+                </tr>
+                <tr>
+                  <th style="background-color: #A9A9A9;"></th>
+                  <th>Homam Ahmed</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Karim Boudiaf</th>
+                  <th>Boualem Khoukhi</th>
+                  <th>Abdullah Al Ahrak</th>
+                </tr>
+                <tr>
+                  <th>Hazem Shehata</th>
+                  <th>Ismail Mohamad</th>
+                  <th>Ali Asad</th>
+                </tr> 
+                <tr>
+                  <th>Abdelrahman Fahmi Moustafa</th>
+                  <th>Mohammed Waad</th>
+                  <th>Naif Al Hadhrami</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Almoez Ali</th>
+                  <th>Akram Afif</th>
+                  <th>Ahmed Alaa</th>
+                </tr>
+                <tr>
+                  <th style="background-color: #A9A9A9;"></th>
+                  <th>Khalid Muneer Ali</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CATﾠ<img src="Flags/Catar.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Equador.svg" alt="">ﾠEQU</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEG 21/11/2022 - AL KHOR</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>10:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CATﾠ<img src="Flags/Catar.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Senegal.svg" alt="">ﾠSEN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEX 25/11/2022 - AL THUMAMA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      HOLﾠ<img src="Flags/Holanda.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Catar.svg" alt="">ﾠCAT</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">TER 29/11/2022 - AL KHOR</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DO CATAR-->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Coreia_do_Sul.svg" alt="">COREIA DO SUL</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de 10 edições da copa do mundo, sendo esta a sua 11º participação.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: Paulo Jorge Gomes Bento</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Kim Seung-Gyu</th>
+                  <th>Cho Hyun-Woo</th>
+                  <th>Kim Dong-Jun</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Ji-Su Park</th>
+                  <th>Kim Tae-Hwan</th>
+                  <th>Kim Min-Jae</th>
+                </tr>
+                <tr>
+                  <th>Kim Young-Gwon</th>
+                  <th>Kim Jin-Su</th>
+                  <th>Kwon Kyung-Won</th>
+                </tr>
+                <tr>
+                  <th>Jonggy Yoon</th>
+                  <th>Pak Ming-yu</th>
+                  <th>Jae-Ik Lee</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Kim Jin-Kyu</th>
+                  <th>Lee Jae-Sung</th>
+                  <th>Nam Tae-Hee</th>
+                </tr>
+                <tr>
+                  <th>Jung Woo-Young</th>
+                  <th>Kwon Chang-Hoon</th>
+                  <th>Ko Seung-Beom</th>
+                </tr> 
+                <tr>
+                  <th>Seung-Ho Paik</th>
+                  <th>Woo-Yeong Jeong</th>
+                  <th>Na Sang-Ho</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Son Heung-Min</th>
+                  <th>Hwang Ui-Jo</th>
+                  <th>Hwang Hee-Chan</th>
+                </tr>
+                <tr>
+                  <th>Young-Wook Cho</th>
+                  <th>Gyu-Seong Jo</th>
+                  <th>Song Min-Kyu</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>10:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      URUﾠ<img src="Flags/Uruguai.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Coreia_do_Sul.svg" alt="">ﾠCOR</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUI 24/11/2022 - CIDADE DA EDUCAÇÃO</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>10:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CORﾠ<img src="Flags/Coreia_do_Sul.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Gana.svg" alt="">ﾠGAN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEG 28/11/2022 - CIDADE DA EDUCAÇÃO</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CORﾠ<img src="Flags/Coreia_do_Sul.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Portugal.svg" alt="">ﾠPOR</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">SEX 02/12/2022 - CIDADE DA EDUCAÇÃO</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DA COREIA DO SUL-->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Croácia.svg" alt="">CROÁCIA</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de 5 edições da copa do mundo, sendo esta a sua 6º participação.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: Zlatko Dalić</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Dominik Livakovic</th>
+                  <th>Ivo Grbic</th>
+                  <th>Ivica Ivusic</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Dejan Lovren</th>
+                  <th>Domagoj Vida</th>
+                  <th>Sime Vrsaljko</th>
+                </tr>
+                <tr>
+                  <th>Duje Caleta-Car</th>
+                  <th>Borna Barisic</th>
+                  <th>Josip Juranovic</th>
+                </tr>
+                <tr>
+                  <th>Borna Sosa</th>
+                  <th>Marin Pongracic</th>
+                  <th>Mile Skoric</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Luka Modric</th>
+                  <th>Ivan Perisic</th>
+                  <th>Mateo Kovacic</th>
+                </tr>
+                <tr>
+                  <th>Marcelo Brozovic</th>
+                  <th>Mario Pasalic</th>
+                  <th>Nikola Vlasic</th>
+                </tr> 
+                <tr>
+                  <th>Nikola Moro</th>
+                  <th>Lovro Majer</th>
+                  <th>Kristijan Jakic</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Andrej Kramaric</th>
+                  <th>Marko Livaja</th>
+                  <th>Mislav Orsic</th>
+                </tr>
+                <tr>
+                  <th>Ante Budimir</th>
+                  <th>Josip Brekalo</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>07:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      MARﾠ<img src="Flags/Marrocos.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Croácia.svg" alt="">ﾠCRO</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUA 23/11/2022 - AL KHOR</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CROﾠ<img src="Flags/Croácia.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Canadá.svg" alt="">ﾠCAN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">DOM 27/11/2022 - INTERNACIONAL KHALIFA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CROﾠ<img src="Flags/Croácia.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Bélgica.svg" alt="">ﾠBEL</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">QUI 01/11/2022 - AL RAYYAN</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DA CROÁCIA-->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Dinamarca.svg" alt="">DINAMARCA</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de 5 edições da copa do mundo, sendo esta a sua 6º participação.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: Kasper Hjulmand</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Kasper Schmeichel</th>
+                  <th>Kasper Schmeichel</th>
+                  <th>Daniel Iversen</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Jannik Vestergaard</th>
+                  <th>Mads Pedersen</th>
+                  <th>Andreas Maxso</th>
+                </tr>
+                <tr>
+                  <th>Andreas Christensen</th>
+                  <th>Joachim Andersen</th>
+                  <th>Rasmus Kristensen</th>
+                </tr>
+                <tr>
+                  <th>Joakim Maehle</th>
+                  <th>Victor Nelsson</th>
+                  <th>Casper Hojer Nielsen</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Christian Eriksen</th>
+                  <th>Thomas Delaney</th>
+                  <th>Pierre-Emile Hojbjerg</th>
+                </tr>
+                <tr>
+                  <th>Christian Norgaard</th>
+                  <th>Phillip Biling</th>
+                  <th>Mathias Jensen</th>
+                </tr> 
+                <tr>
+                  <th style="background-color: #A9A9A9;"></th>
+                  <th>Jesper Lindstrom	</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Andreas Cornelius</th>
+                  <th>Yussuf Poulsen</th>
+                  <th>Kasper Dolberg</th>
+                </tr>
+                <tr>
+                  <th>Jacob Bruun Larsen</th>
+                  <th>Andreas Skov Olsen</th>
+                  <th>Jonas Wind	</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>10:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      DINﾠ<img src="Flags/Dinamarca.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/tunisia.svg" alt="">ﾠTUN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">TER 22/11/2022 - CIDADE DA EDUCAÇÃO</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>07:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      FRAﾠ<img src="Flags/França.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Dinamarca.svg" alt="">ﾠDIN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SÁB 26/11/2022 - PORTO DE DOHA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      ﾠ<img src="Flags/FIFA.jpg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Dinamarca.svg" alt="">ﾠDIN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">QUA 30/11/2022 - AL WAKRAH</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DA DINAMARCA -->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Espanha.svg" alt="">ESPANHA</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de 15 edições da copa do mundo, sendo esta a sua 16º participação.</li>
+                <li>➱ﾠSeleção campeã mundial em 2010.</li>
+                <li>➱ﾠNome do Técnico: Luis Enrique Martínez García</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>David Raya</th>
+                  <th>Unai Simón</th>
+                  <th>Arnau Tenas</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>César Azpilicueta</th>
+                  <th>Jordi Alba</th>
+                  <th>Eric García</th>
+                </tr>
+                <tr>
+                  <th>Marcos Alonso</th>
+                  <th>Aymeric Laporte</th>
+                  <th>Dani Carvajal</th>
+                </tr>
+                <tr>
+                  <th>Pau Torres</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                  <th>Hugo Guillamón	</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Koke</th>
+                  <th>Pablo Sarabia</th>
+                  <th>Marcos Llorente</th>
+                </tr>
+                <tr>
+                  <th>Dani Olmo</th>
+                  <th>Rodri</th>
+                  <th>Carlos Soler</th>
+                </tr> 
+                <tr>
+                  <th>Pedri	</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                  <th>Gavi</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Yeremi Pino</th>
+                  <th>Álvaro Morata</th>
+                  <th>Ferran Torres</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      ESPﾠ<img src="Flags/Espanha.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/FIFA.jpg" alt="">ﾠ</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUA 23/11/2022 - AL THUMAMA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>16:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      ESPﾠ<img src="Flags/Espanha.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Alemanha.svg" alt="">ﾠALE</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">DOM 27/11/2022 - AL KHOR</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>16:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      JAPﾠ<img src="Flags/Japao.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Espanha.svg" alt="">ﾠESP</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">QUI 01/11/2022 - INTERNACIONAL KHALIFA</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DA ESPANHA -->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Equador.svg" alt="">EQUADOR</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de 3 edições da copa do mundo, sendo esta a sua 4º participação.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: Gustavo Julio Alfaro</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Jorge Pinos</th>
+                  <th>Hernan Galindez</th>
+                  <th>Wellington Ramírez</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Luis Fernando León</th>
+                  <th>Robert Arboleda</th>
+                  <th>Xavier Arreaga</th>
+                </tr>
+                <tr>
+                  <th>Pervis Estupiñán</th>
+                  <th>Byron Castillo</th>
+                  <th>Félix Torres</th>
+                </tr>
+                <tr>
+                  <th>Angelo Preciado</th>
+                  <th>Diego Palacios</th>
+                  <th>Piero Hincapié</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Danny Cabezas Bazan</th>
+                  <th>Carlos Gruezo</th>
+                  <th>Sebastián Méndez</th>
+                </tr>
+                <tr>
+                  <th>Joao Rojas López</th>
+                  <th>José Cifuentes</th>
+                  <th>Alan Franco</th>
+                </tr> 
+                <tr>
+                  <th>Gonzalo Plata</th>
+                  <th>Moises Caicedo</th>
+                  <th>Michael Carcelen</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Renato Ibarra</th>
+                  <th>Enner Valencia</th>
+                  <th>Romario Ibarra</th>
+                </tr>
+                <tr>
+                  <th>Ángel Mena</th>
+                  <th>Michael Estrada</th>
+                  <th>Jordy Caicedo</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CATﾠ<img src="Flags/Catar.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Equador.svg" alt="">ﾠEQU</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEG 21/11/2022 - AL KHOR</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      HOLﾠ<img src="Flags/Holanda.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Equador.svg" alt="">ﾠEQU</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEX 25/11/2022 - INTERNACIONAL KHALIFA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      EQUﾠ<img src="Flags/Equador.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Senegal.svg" alt="">ﾠSEN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">TER 29/11/2022 - INTERNACIONAL KHALIFA</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DO EQUADOR -->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Estados_Unidos.svg" alt="">ESTADOS UNIDOS</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de 10 edições da copa do mundo, sendo esta a sua 11º participação.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: Gregg Berhalter</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIRO<S/th>
+                </tr>
+                <tr>
+                  <th>Sean Johnson</th>
+                  <th>Ethan Horvath</th>
+                  <th>Zack Steffen</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Walker Zimmerman</th>
+                  <th>DeAndre Yedlin</th>
+                  <th>Erik Palmer-Brown</th>
+                </tr>
+                <tr>
+                  <th>Aaron Long</th>
+                  <th>Shaq Moore</th>
+                  <th>Antonee Robinson</th>
+                </tr>
+                <tr>
+                  <th>Miles Robinson</th>
+                  <th>Reggie Cannon</th>
+                  <th>George Bello</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Kellyn Acosta</th>
+                  <th>Paul Arriola</th>
+                  <th>Cristian Roldan</th>
+                </tr>
+                <tr>
+                  <th>Tyler Adams</th>
+                  <th>Christian Pulisic</th>
+                  <th>Luca de la Torre</th>
+                </tr> 
+                <tr>
+                  <th>James Sands</th>
+                  <th>Gianluca Busio</th>
+                  <th>Giovanni Reyna</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Jordan Morris</th>
+                  <th>Jordan Pefok</th>
+                  <th>Jesús Ferreira</th>
+                </tr>
+                <tr>
+                  <th>Timothy Weah</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                  <th>Ricardo Pepi</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>16:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      EUAﾠ<img src="Flags/Estados_Unidos.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/FIFA.jpg" alt="">ﾠ</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEG 21/11/2022 - AL RAYYAN</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>16:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      INGﾠ<img src="Flags/Inglaterra.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Estados_Unidos.svg" alt="">ﾠEUA</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEX 25/11/2022 - AL KHOR</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>16:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      IRAﾠ<img src="Flags/Irã.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Estados_Unidos.svg" alt="">ﾠEUA</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">TER 29/11/2022 - AL THUMAMA</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DOS ESTADOS UNIDOS -->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/França.svg" alt="">FRANÇA</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de 15 edições da copa do mundo, sendo esta a sua 16º participação.</li>
+                <li>➱ﾠSeleção bicampeã mundial em 1998 e 2018.</li>
+                <li>➱ﾠNome do Técnico: Didier Deschamps</li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Hugo Lloris</th>
+                  <th>Alphonse Areola</th>
+                  <th>Mike Maignan</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Raphaël Varane</th>
+                  <th>Lucas Digne</th>
+                  <th>Lucas Hernández</th>
+                </tr>
+                <tr>
+                  <th>Presnel Kimpembe</th>
+                  <th>Jules Koundé</th>
+                  <th>Jonathan Clauss</th>
+                </tr>
+                <tr>
+                  <th>Theo Hernández</th>
+                  <th style="background-color: #A9A9A9;"></th>
+                  <th>William Saliba</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Paul Pogba</th>
+                  <th>N'Golo Kanté</th>
+                  <th>Adrien Rabiot</th>
+                </tr>
+                <tr>
+                  <th>Christopher Nkunku</th>
+                  <th>Matteo Guendouzi</th>
+                  <th>Aurelien Tchouameni</th>
+                </tr> 
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Karim Benzema</th>
+                  <th>Olivier Giroud</th>
+                  <th>Antoine Griezmann</th>
+                </tr>
+                <tr>
+                  <th>Wissam Ben Yedder</th>
+                  <th>Kingsley Coman</th>
+                  <th>Kylian Mbappé</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>16:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      FRAﾠ<img src="Flags/França.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/FIFA.jpg" alt="">ﾠ</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">TER 22/11/2022 - AL WAKRAH</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      FRAﾠ<img src="Flags/França.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Dinamarca.svg" alt="">ﾠDIN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SÁB 26/11/2022 - PORTO DE DOHA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      TUNﾠ<img src="Flags/tunisia.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/França.svg" alt="">ﾠFRA</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">QUA 30/11/2022 - CIDADE DA EDUCAÇÃO</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DA FRANÇA -->
+    
+      <tr>
+        <td>
+          <details>
+            <summary><img src="Flags/Gana.svg" alt="">GANA</summary>
+      
+            <p>
+              <br>
+              <ul>
+                <li>➱ﾠParticipou de  edições da copa do mundo, sendo esta a sua º participação.</li>
+                <li>➱ﾠNenhum título mundial.</li>
+                <li>➱ﾠNome do Técnico: </li>
+      
+                <details>
+              <summary>Jogadores:</summary>
+              <table border="1">
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">GOLEIROS</th>
+                </tr>
+                <tr>
+                  <th>Lawrence Ati</th>
+                  <th>Joseph Wollacott</th>
+                  <th>Abdul Manaf Nurudeen</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">DEFENSORES</th>
+                </tr>
+                <tr>
+                  <th>Richard Ofori</th>
+                  <th>Denis Odoi</th>
+                  <th>Andy Yiadom</th>
+                </tr>
+                <tr>
+                  <th>Alexander Djiku</th>
+                  <th>Daniel Amartey</th>
+                  <th>Joseph Aidoo</th>
+                </tr>
+                <tr>
+                  <th>Abdul Mumin</th>
+                  <th>Gideon Mensah</th>
+                  <th>Montari Kamaheni</th>
+                </tr>
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">MEIO-CAMPISTAS</th>
+                </tr>
+                <tr>
+                  <th>Thomas Partey</th>
+                  <th>Elisha Owusu</th>
+                  <th>Mohammed Kudus</th>
+                </tr>
+                <tr>
+                  <th>Daniel-Kofi Kyereh</th>
+                  <th>Iddrisu Baba</th>
+                  <th>Osman Bukari</th>
+                </tr> 
+                <tr>
+                  <th colspan="3" style="background-color:#A52A2A; color:#FFFF;">ATACANTES</th>
+                </tr>
+                <tr>
+                  <th>Yaw Yeboah</th>
+                  <th>Jordan Ayew</th>
+                  <th>Kwasi Wriedt</th>
+                </tr>
+                <tr>
+                  <th>Joseph Paintsil</th>
+                  <th>Christopher Antwi-Adjei</th>
+                  <th>Fatawu Issahaku</th>
+                </tr>
+              </table>
+            </details>
+            
+                <details>
+                <summary>Tabela com os jogos que irá ocorrer:</summary>
+                <table>
+                  <tr>
+                    <tr>
+                      <th>13:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      PORﾠ<img src="Flags/Portugal.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Gana.svg" alt="">ﾠGAN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">QUI 24/11/2022 - PORTO DE DOHA</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>10:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      CORﾠ<img src="Flags/Coreia_do_Sul.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Gana.svg" alt="">ﾠGAN</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal; padding: 1%; border-bottom: 1px solid gray;">SEG 28/11/2022 - CIDADE DA EDUCAÇÃO</th>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <th>12:00</th>
+                    </tr>
+                    <th style="font-size: 20px;">
+                      GANﾠ<img src="Flags/Gana.svg" alt="">ﾠﾠXﾠﾠ
+                      <img src="Flags/Uruguai.svg" alt="">ﾠURU</th>
+                  </tr> 
+                  <tr>   
+                      <th style="font-weight: normal;">SEX 02/12/2022 - AL WAKRAH</th>
+                  </tr>
+                </table>
+            </details>
+              </ul>
+              <br>
+            </p>
+          </details>
+        </td>
+      </tr>
+      <!-- FIM DAS INFORMAÇÕES DA GANA -->
+    
+        </table>
+    
+      </section>
+</div>
 
-    </table>
-
-  </section>
-
-
+      <div id="coluna2">
+        <img src="https://blogdointercambio.west1.com.br/wp-content/uploads/2019/05/290550-qual-a-diferenca-de-embaixada-e-consulado-entenda-1024x683.jpg">
+    </div>
+  <!-- RODAPÉ -->
+    <footer></footer>
 </body>
 </html>
