@@ -1,5 +1,5 @@
-header {
-    background-image: url("img/estadios/974_stadium1.jpg");
+html {
+    scroll-behavior: smooth;
 }
 
 .stadium_menu {
